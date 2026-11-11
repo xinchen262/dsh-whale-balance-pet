@@ -1,0 +1,4 @@
+- insert:
+    - id: whale-pet
+      name: 'dsh-whale-balance-pet'
+      config: {}
