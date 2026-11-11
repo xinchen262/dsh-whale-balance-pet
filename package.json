@@ -1,0 +1,52 @@
+{
+  "name": "dsh-whale-balance-pet",
+  "version": "1.0.0",
+  "description": "A floating whale-girl desktop pet for DeepSeek Harness that shows the live account balance and the money burn rate derived from token usage.",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xinchen262/dsh-whale-balance-pet.git"
+  },
+  "homepage": "https://github.com/xinchen262/dsh-whale-balance-pet#readme",
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "desktop-pet",
+    "balance",
+    "token-usage"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-alpha.4"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.webp"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.webp",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-api-remotes",
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  }
+}
