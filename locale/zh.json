@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "小鲸余额桌宠",
+    "description": "在 Harness 页面右下角放一只小鲸桌宠，实时显示 DeepSeek 余额，并按 token 消耗速度估算每分钟花费。"
+  }
+}
